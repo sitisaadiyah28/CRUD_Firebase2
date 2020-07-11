@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "342069081409",
+    "firebase_url": "https://login-2800c.firebaseio.com",
+    "project_id": "login-2800c",
+    "storage_bucket": "login-2800c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:342069081409:android:8f0edfb32df2b767f39dc0",
+        "android_client_info": {
+          "package_name": "com.sitiflutter.google_sign"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "342069081409-naf332eakmifntristcaohefv918egpg.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.sitiflutter.google_sign",
+            "certificate_hash": "449d99d1735628bd5dabbc3637e9774feca54fb3"
+          }
+        },
+        {
+          "client_id": "342069081409-ee056u9d17gkqfgi029egpc4andk5ovv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBMwwdE2Vm7C4m-ZdHo0VNAj4NH4PwDdr4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "342069081409-ee056u9d17gkqfgi029egpc4andk5ovv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
