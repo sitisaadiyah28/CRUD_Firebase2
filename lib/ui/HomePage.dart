@@ -8,6 +8,7 @@ import 'package:google_sign/main.dart';
 import 'package:google_sign/model/ModelJurusan.dart';
 import 'package:google_sign/ui/AddJurusan.dart';
 import 'package:google_sign/ui/ListJurusan.dart';
+import 'package:google_sign/ui/LokasiPage.dart';
 import 'package:google_sign_in/google_sign_in.dart';
 
 class HomePage extends StatefulWidget {
@@ -32,13 +33,6 @@ class _HomePageState extends State<HomePage> {
           children: <Widget>[
             ClipOval(
               child: new Image.network(widget.user.photoUrl),
-            ),
-            Padding(
-              padding: const EdgeInsets.only(top: 8.0),
-              child: Text(
-                widget.user.displayName,
-                style: new TextStyle(fontSize: 16.0),
-              ),
             ),
             Padding(
               padding: const EdgeInsets.only(top: 8.0),
@@ -107,7 +101,7 @@ class _HomePageState extends State<HomePage> {
             accountEmail: Text(widget.user.email),
             currentAccountPicture: CircleAvatar(
               backgroundColor: Colors.white,
-              radius: 100,
+              radius: 150,
               child: Image(
                 image: NetworkImage(widget.user.photoUrl),
               ),
@@ -127,6 +121,13 @@ class _HomePageState extends State<HomePage> {
             title: Text('Tambah Jurusan'),
             onTap: () {
               Navigator.push(context, MaterialPageRoute(builder: (context) => AddJurusan()));
+            },
+          ),
+          ListTile(
+            leading: Icon(Icons.location_on),
+            title: Text('Lokasi PNP'),
+            onTap: () {
+              Navigator.push(context, MaterialPageRoute(builder: (context) => LokasiPage()));
             },
           ),
           ListTile(
@@ -160,8 +161,8 @@ class _HomePageState extends State<HomePage> {
             child: Carousel(
               autoplay: true,
               indicatorBgPadding: 4.0,
-              dotBgColor: Colors.orange,
-              dotColor: Colors.green,
+              dotBgColor: Colors.transparent,
+              dotColor: Colors.orange,
               images: [
                 AssetImage('images/pnp2.jpg'),
                 AssetImage('images/pnpp.jpg'),
@@ -170,7 +171,7 @@ class _HomePageState extends State<HomePage> {
             ),
           ),
           SizedBox(
-            height: 50,
+            height: 30,
           ),
           Container(
               child: Padding(
